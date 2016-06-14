@@ -49,10 +49,10 @@ services:
       - zookeeper
     environment:
       SR_KAFKASTORE_CONNECTION_URL: "zookeeper:2181"
-      SR_SECURITY_PROTOCOL: = "PLAINTEXT"
+      SR_SECURITY_PROTOCOL: "PLAINTEXT"
       SR_KAFKASTORE_TOPIC: "_schemas"
       SR_LISTENERS: "http://schema-registry:18081"
       SR_DEBUG: "true"
-	  KAFKA_BROKER: "kafka"
-	  KAFKA_PORT: "9092"
+      KAFKA_BROKER: "kafka"
+      KAFKA_PORT: "9092"
       
